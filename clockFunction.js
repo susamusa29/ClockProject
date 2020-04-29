@@ -3,10 +3,7 @@ function startTime(){
     var hours = today.getHours();
     var minutes = today.getMinutes();
     var sec = today.getSeconds();
-
-    hours = checkTime(hours);
-    minutes = checkTime(minutes);
-    sec = checkTime(sec);
+    
     switch(sec){
         case 0:
             getNewColour();
@@ -27,6 +24,10 @@ function startTime(){
             getNewColour();
             break;
     }
+
+    hours = checkTime(hours);
+    minutes = checkTime(minutes);
+    sec = checkTime(sec);
     
     document.getElementById('time').innerHTML = 
     hours + ':' + minutes + ":" + sec;
