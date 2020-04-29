@@ -4,10 +4,10 @@ function startTime(){
     var minutes = today.getMinutes();
     var sec = today.getSeconds();
     
-    switch(sec){
-        case 0:
-            getNewColour();
-            break;
+//     switch(sec){
+//         case 0:
+//             getNewColour();
+//             break;
 //         case 10:
 //             getNewColour();
 //             break;
@@ -23,7 +23,7 @@ function startTime(){
 //         case 50:
 //             getNewColour();
 //             break;
-    }
+//    }
 
     hours = checkTime(hours);
     minutes = checkTime(minutes);
@@ -53,3 +53,5 @@ function getNewColour(){
     document.body.style.background = color;
 
 }
+
+setInterval(getNewColour(), 10000);
