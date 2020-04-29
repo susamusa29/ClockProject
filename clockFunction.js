@@ -5,9 +5,9 @@ function startTime(){
     var sec = today.getSeconds();
     
     switch(sec){
-        case 0:
-            getNewColour();
-            break;
+//         case 0:
+//             getNewColour();
+//             break;
         case 10:
             getNewColour();
             break;
