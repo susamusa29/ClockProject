@@ -7,15 +7,10 @@ function startTime(){
     hours = checkTime(hours);
     minutes = checkTime(minutes);
     sec = checkTime(sec);
-
+    
     document.getElementById('time').innerHTML = 
     hours + ':' + minutes + ":" + sec;
-    var t = setTimeout(startTime, 499);
-
-}
-
-function checkTime(i){
-    switch(i){
+    switch(sec){
         case 0:
             getNewColour();
             break;
@@ -35,6 +30,11 @@ function checkTime(i){
             getNewColour();
             break;
     }
+    var t = setTimeout(startTime, 499);
+
+}
+
+function checkTime(i){
     if (i < 10) {i = "0" + i}; //add zero if below 10
     return i
 }
