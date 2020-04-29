@@ -4,26 +4,26 @@ function startTime(){
     var minutes = today.getMinutes();
     var sec = today.getSeconds();
     
-    switch(sec){
-        case 0:
-            getNewColour();
-            break;
-        case 10:
-            getNewColour();
-            break;
-        case 20:
-            getNewColour();
-            break;
-        case 30:
-            getNewColour();
-            break;
-        case 40:
-            getNewColour();
-            break;
-        case 50:
-            getNewColour();
-            break;
-    }
+//     switch(sec){
+//         case 0:
+//             getNewColour();
+//             break;
+//         case 10:
+//             getNewColour();
+//             break;
+//         case 20:
+//             getNewColour();
+//             break;
+//         case 30:
+//             getNewColour();
+//             break;
+//         case 40:
+//             getNewColour();
+//             break;
+//         case 50:
+//             getNewColour();
+//             break;
+//     }
 
     hours = checkTime(hours);
     minutes = checkTime(minutes);
