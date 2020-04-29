@@ -7,9 +7,6 @@ function startTime(){
     hours = checkTime(hours);
     minutes = checkTime(minutes);
     sec = checkTime(sec);
-    
-    document.getElementById('time').innerHTML = 
-    hours + ':' + minutes + ":" + sec;
     switch(sec){
         case 0:
             getNewColour();
@@ -30,6 +27,9 @@ function startTime(){
             getNewColour();
             break;
     }
+    
+    document.getElementById('time').innerHTML = 
+    hours + ':' + minutes + ":" + sec;
     var t = setTimeout(startTime, 499);
 
 }
