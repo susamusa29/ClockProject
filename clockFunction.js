@@ -31,7 +31,7 @@ function startTime(){
     
     document.getElementById('time').innerHTML = 
     hours + ':' + minutes + ":" + sec;
-    var t = setTimeout(startTime, 499);
+    var t = setTimeout(startTime, 1000);
 
 }
 
